@@ -29,10 +29,10 @@
     <div class="w3-gray w3-padding-small w3-border-left w3-border-top w3-border-indigo  w3-center">
 
         <div style="white-space: nowrap;">
-            <input type="number" min="0"
+            <input id="nr" type="number" min="0"
                    style="width: 7em"
                    class="w3-xlarge w3-padding-24 w3-border-bottom w3-border-brown w3-border-0 w3-sand w3-text-indigo">
-            <button class="w3-round w3-center w3-button w3-btn w3-dark-grey">
+            <button onClick="send()" class="w3-round w3-center w3-button w3-btn w3-dark-grey">
                 <img class="w3-padding-16" src="img/send.png">
             </button>
         </div>
@@ -42,7 +42,7 @@
     <br>
 </div>
 <div id="response" class="w3-card-2 w3-green w3-text-white w3-bottom">
-    <div class="w3-margin-left w3-margin">
+    <div  id="responseText" class="w3-margin-left w3-margin">
         Bereit
     </div>
 </div>
