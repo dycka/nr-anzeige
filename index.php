@@ -20,27 +20,32 @@
             Neuwied-Gladbach</h5>
     </div>
 </div>
-<div class="w3-display-container w3-content w3-padding-small bottom">
+<div class="w3-display-container w3-center w3-content w3-padding-small bottom">
     <h3 class="left">Nummernanzeige im Versammlungsraum</h3>
-    <div class="w3-margin-top">Singen wir noch das Lied unter der</div>
-    <h3 class="w3-text-indigo">Nummer</h3>
-    <div class="" style="white-space: nowrap;">
-        <input type="number" min="0"
-               class="w3-xlarge w3-wide w3-padding-24 w3-border-bottom w3-border-brown w3-border-0 w3-left-align w3-sand w3-text-indigo">
-        <button class="w3-round  w3-button w3-btn w3-grey">
-            <img class="w3-right-align w3-padding-16" src="img/send.png"
-        </button>
+    <div class="w3-margin-top">
+        Singen wir noch das Lied unter der
     </div>
+    <h3 class="w3-text-indigo">Nummer</h3>
+    <div class="w3-gray w3-padding-small w3-border-left w3-border-top w3-border-indigo  w3-center">
 
+        <div style="white-space: nowrap;">
+            <input type="number" min="0"
+                   style="width: 7em"
+                   class="w3-xlarge w3-padding-24 w3-border-bottom w3-border-brown w3-border-0 w3-sand w3-text-indigo">
+            <button class="w3-round w3-center w3-button w3-btn w3-dark-grey">
+                <img class="w3-padding-16" src="img/send.png">
+            </button>
+        </div>
+    </div>
 </div>
 <div class="w3-margin">
-<br>
+    <br>
 </div>
 <div id="response" class="w3-card-2 w3-green w3-text-white w3-bottom">
     <div class="w3-margin-left w3-margin">
         Bereit
     </div>
-</div></div>
+</div>
 </body>
 <?php
 ?>
