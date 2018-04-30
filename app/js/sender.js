@@ -21,6 +21,8 @@ function send() {
     } else {
         setError(numberField.validationMessage);
     }
+
+    numberField.focus();
 }
 
 function setLoading() {
