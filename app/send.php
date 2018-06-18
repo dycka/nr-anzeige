@@ -5,11 +5,19 @@ $confPath = "CONF-ScriptPath";
 //MAIN SCRIPT
 $nr = $_GET['nr'];
 
-$scriptPath = getScriptPath($confPath);
+if (is_int($nr)) {
+//valid param
+    $scriptPath = getScriptPath($confPath);
 //generate command
-$cmd = 'sh ' . $scriptPath . ' ' . $nr;
+    $cmd = 'sh ' . $scriptPath . ' ' . $nr;
 //run script and return response
-echo shell_exec($cmd);
+    echo shell_exec($cmd);
+
+} else {
+//resolved param is invalid
+    echo 'Ungültige Eingabe';
+}
+
 exit();
 
 //FUNCTIONS
@@ -18,6 +26,7 @@ exit();
  *  Returns the script path which is configured in the given config-file.
  *
  * @param $confPath path to file with the script file
+ * @return the configured path is valid? true/false
  */
 function getScriptPath($confPath)
 {
@@ -25,7 +34,7 @@ function getScriptPath($confPath)
 
     if (!$content || empty($content) || $content == '') {
         //Error while opening
-        //ABBRUCH
+        //CANCEL
         echo "Falsche Konfiguration";
         exit();
     }
