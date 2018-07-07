@@ -5,7 +5,7 @@ $confPath = "CONF-ScriptPath";
 //MAIN SCRIPT
 $nr = $_GET['nr'];
 
-if (is_int($nr)) {
+if (is_numeric($nr)) {
 //valid param
     $scriptPath = getScriptPath($confPath);
 //generate command
